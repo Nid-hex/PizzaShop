@@ -40,16 +40,21 @@ Partial Class Form1
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.chkSupreme = New System.Windows.Forms.CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.chkPlain = New System.Windows.Forms.CheckBox()
         Me.chkSauce = New System.Windows.Forms.CheckBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(26, 85)
+        Me.GroupBox1.BackColor = System.Drawing.Color.Pink
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 110)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(146, 20)
         Me.GroupBox1.TabIndex = 0
@@ -58,38 +63,40 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Location = New System.Drawing.Point(203, 80)
+        Me.GroupBox2.BackColor = System.Drawing.Color.Khaki
+        Me.GroupBox2.Location = New System.Drawing.Point(316, 105)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(107, 25)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Base Pizza"
+        Me.GroupBox2.Text = "Base Option"
         '
         'GroupBox3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(748, 86)
+        Me.GroupBox3.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.GroupBox3.Location = New System.Drawing.Point(594, 105)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(111, 19)
+        Me.GroupBox3.Size = New System.Drawing.Size(160, 25)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Supreme Pizza"
+        Me.GroupBox3.Text = "Choose Toppings"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.Window
+        Me.Label1.BackColor = System.Drawing.Color.PaleVioletRed
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(270, 22)
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(395, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(242, 39)
+        Me.Label1.Size = New System.Drawing.Size(215, 39)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "PIZZZA SHOP"
+        Me.Label1.Text = "Pizza Palace"
         '
         'rdoSmall
         '
         Me.rdoSmall.AutoSize = True
-        Me.rdoSmall.Location = New System.Drawing.Point(26, 125)
+        Me.rdoSmall.Location = New System.Drawing.Point(26, 159)
         Me.rdoSmall.Name = "rdoSmall"
         Me.rdoSmall.Size = New System.Drawing.Size(93, 20)
         Me.rdoSmall.TabIndex = 4
@@ -100,7 +107,7 @@ Partial Class Form1
         'rdoMedium
         '
         Me.rdoMedium.AutoSize = True
-        Me.rdoMedium.Location = New System.Drawing.Point(26, 160)
+        Me.rdoMedium.Location = New System.Drawing.Point(26, 192)
         Me.rdoMedium.Name = "rdoMedium"
         Me.rdoMedium.Size = New System.Drawing.Size(107, 20)
         Me.rdoMedium.TabIndex = 5
@@ -111,7 +118,7 @@ Partial Class Form1
         'rdoLarge
         '
         Me.rdoLarge.AutoSize = True
-        Me.rdoLarge.Location = New System.Drawing.Point(26, 198)
+        Me.rdoLarge.Location = New System.Drawing.Point(25, 233)
         Me.rdoLarge.Name = "rdoLarge"
         Me.rdoLarge.Size = New System.Drawing.Size(94, 20)
         Me.rdoLarge.TabIndex = 6
@@ -122,7 +129,7 @@ Partial Class Form1
         'chkMushroom
         '
         Me.chkMushroom.AutoSize = True
-        Me.chkMushroom.Location = New System.Drawing.Point(381, 160)
+        Me.chkMushroom.Location = New System.Drawing.Point(594, 159)
         Me.chkMushroom.Name = "chkMushroom"
         Me.chkMushroom.Size = New System.Drawing.Size(92, 20)
         Me.chkMushroom.TabIndex = 9
@@ -132,7 +139,7 @@ Partial Class Form1
         'chkSausage
         '
         Me.chkSausage.AutoSize = True
-        Me.chkSausage.Location = New System.Drawing.Point(381, 198)
+        Me.chkSausage.Location = New System.Drawing.Point(594, 193)
         Me.chkSausage.Name = "chkSausage"
         Me.chkSausage.Size = New System.Drawing.Size(84, 20)
         Me.chkSausage.TabIndex = 10
@@ -142,7 +149,7 @@ Partial Class Form1
         'chkOnions
         '
         Me.chkOnions.AutoSize = True
-        Me.chkOnions.Location = New System.Drawing.Point(381, 233)
+        Me.chkOnions.Location = New System.Drawing.Point(594, 233)
         Me.chkOnions.Name = "chkOnions"
         Me.chkOnions.Size = New System.Drawing.Size(71, 20)
         Me.chkOnions.TabIndex = 11
@@ -152,7 +159,7 @@ Partial Class Form1
         'chkGreenPepper
         '
         Me.chkGreenPepper.AutoSize = True
-        Me.chkGreenPepper.Location = New System.Drawing.Point(381, 265)
+        Me.chkGreenPepper.Location = New System.Drawing.Point(594, 273)
         Me.chkGreenPepper.Name = "chkGreenPepper"
         Me.chkGreenPepper.Size = New System.Drawing.Size(111, 20)
         Me.chkGreenPepper.TabIndex = 12
@@ -161,16 +168,16 @@ Partial Class Form1
         '
         'btnOrder
         '
-        Me.btnOrder.Location = New System.Drawing.Point(343, 381)
+        Me.btnOrder.Location = New System.Drawing.Point(82, 483)
         Me.btnOrder.Name = "btnOrder"
-        Me.btnOrder.Size = New System.Drawing.Size(103, 44)
+        Me.btnOrder.Size = New System.Drawing.Size(881, 44)
         Me.btnOrder.TabIndex = 13
-        Me.btnOrder.Text = "Place Order"
+        Me.btnOrder.Text = "Place order"
         Me.btnOrder.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(970, 492)
+        Me.btnExit.Location = New System.Drawing.Point(982, 544)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 14
@@ -180,7 +187,7 @@ Partial Class Form1
         'lblCost
         '
         Me.lblCost.AutoSize = True
-        Me.lblCost.Location = New System.Drawing.Point(69, 265)
+        Me.lblCost.Location = New System.Drawing.Point(111, 369)
         Me.lblCost.Name = "lblCost"
         Me.lblCost.Size = New System.Drawing.Size(79, 16)
         Me.lblCost.TabIndex = 15
@@ -189,7 +196,7 @@ Partial Class Form1
         'lblTax
         '
         Me.lblTax.AutoSize = True
-        Me.lblTax.Location = New System.Drawing.Point(69, 301)
+        Me.lblTax.Location = New System.Drawing.Point(111, 401)
         Me.lblTax.Name = "lblTax"
         Me.lblTax.Size = New System.Drawing.Size(67, 16)
         Me.lblTax.TabIndex = 16
@@ -198,7 +205,7 @@ Partial Class Form1
         'lblTotal
         '
         Me.lblTotal.AutoSize = True
-        Me.lblTotal.Location = New System.Drawing.Point(69, 334)
+        Me.lblTotal.Location = New System.Drawing.Point(111, 440)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(96, 16)
         Me.lblTotal.TabIndex = 17
@@ -206,31 +213,23 @@ Partial Class Form1
         '
         'GroupBox4
         '
-        Me.GroupBox4.Location = New System.Drawing.Point(381, 80)
+        Me.GroupBox4.BackColor = System.Drawing.Color.Violet
+        Me.GroupBox4.Location = New System.Drawing.Point(316, 245)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(122, 25)
+        Me.GroupBox4.Size = New System.Drawing.Size(125, 25)
         Me.GroupBox4.TabIndex = 18
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Extra Toppings"
+        Me.GroupBox4.Text = "Supreme Option"
         '
         'chkSupreme
         '
         Me.chkSupreme.AutoSize = True
-        Me.chkSupreme.Location = New System.Drawing.Point(748, 160)
+        Me.chkSupreme.Location = New System.Drawing.Point(316, 296)
         Me.chkSupreme.Name = "chkSupreme"
         Me.chkSupreme.Size = New System.Drawing.Size(84, 20)
         Me.chkSupreme.TabIndex = 19
         Me.chkSupreme.Text = "Supreme"
         Me.chkSupreme.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(378, 116)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(284, 16)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "Small = $1, Medium = $1.50, Large = $2.25 each"
         '
         'Label3
         '
@@ -240,46 +239,91 @@ Partial Class Form1
         Me.Label3.Size = New System.Drawing.Size(0, 16)
         Me.Label3.TabIndex = 21
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(745, 116)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(271, 16)
-        Me.Label4.TabIndex = 22
-        Me.Label4.Text = "Small = $15, Medium = $21, Large = $27 each"
-        '
         'chkPlain
         '
         Me.chkPlain.AutoSize = True
-        Me.chkPlain.Location = New System.Drawing.Point(203, 126)
+        Me.chkPlain.Location = New System.Drawing.Point(316, 159)
         Me.chkPlain.Name = "chkPlain"
-        Me.chkPlain.Size = New System.Drawing.Size(59, 20)
+        Me.chkPlain.Size = New System.Drawing.Size(137, 20)
         Me.chkPlain.TabIndex = 23
-        Me.chkPlain.Text = "Plain"
+        Me.chkPlain.Text = "Plain with Cheese "
         Me.chkPlain.UseVisualStyleBackColor = True
         '
         'chkSauce
         '
         Me.chkSauce.AutoSize = True
-        Me.chkSauce.Location = New System.Drawing.Point(203, 161)
+        Me.chkSauce.Location = New System.Drawing.Point(316, 192)
         Me.chkSauce.Name = "chkSauce"
-        Me.chkSauce.Size = New System.Drawing.Size(68, 20)
+        Me.chkSauce.Size = New System.Drawing.Size(118, 20)
         Me.chkSauce.TabIndex = 24
-        Me.chkSauce.Text = "Sauce"
+        Me.chkSauce.Text = "Tomato Sauce"
         Me.chkSauce.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label2.Location = New System.Drawing.Point(363, 57)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(290, 20)
+        Me.Label2.TabIndex = 25
+        Me.Label2.Text = "Fresh, Hot and Delivered to your door"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Label4.Location = New System.Drawing.Point(889, 163)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(124, 16)
+        Me.Label4.TabIndex = 26
+        Me.Label4.Text = "Small :  +$1.00 each"
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.GroupBox5.Location = New System.Drawing.Point(892, 103)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(137, 27)
+        Me.GroupBox5.TabIndex = 27
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Toppings Rate"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Label5.Location = New System.Drawing.Point(889, 194)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(138, 16)
+        Me.Label5.TabIndex = 28
+        Me.Label5.Text = "Medium :  +$1.50 each"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Label6.Location = New System.Drawing.Point(889, 222)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(125, 16)
+        Me.Label6.TabIndex = 29
+        Me.Label6.Text = "Large :  +$2.25 each"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(1057, 527)
+        Me.BackColor = System.Drawing.Color.Beige
+        Me.ClientSize = New System.Drawing.Size(1069, 579)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.GroupBox5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.chkSauce)
         Me.Controls.Add(Me.chkPlain)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.chkSupreme)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.lblTotal)
@@ -323,9 +367,12 @@ Partial Class Form1
     Friend WithEvents lblTotal As Label
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents chkSupreme As CheckBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents chkPlain As CheckBox
     Friend WithEvents chkSauce As CheckBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class
